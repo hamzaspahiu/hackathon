@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="clay">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f1e9" />
+    <meta name="description" content="A local-first geography arcade for curious minds." />
+    <title>Flag Frenzy — The Geography Arcade</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script defer src="./scripts/data.js"></script>
+    <script defer src="./scripts/scoring.js"></script>
+    <script defer src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <button class="brand" id="home-button" aria-label="Flag Frenzy home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span class="brand-type">FLAG FRENZY<small>THE WORLD, AT A GLANCE</small></span>
+      </button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <button class="nav-link is-active" id="play-nav">PLAY</button>
+        <button class="nav-link" id="stats-nav">STATS</button>
+      </nav>
+      <div class="top-actions">
+        <span class="local-badge">LOCAL EDITION</span>
+        <button class="icon-button" id="settings-nav" aria-label="Open settings" title="Settings">SET</button>
+      </div>
+    </header>
+    <main id="app-main" tabindex="-1"></main>
+  </body>
+</html>
